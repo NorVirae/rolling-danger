@@ -36,5 +36,10 @@ public class Key : MonoBehaviour
 
             Gizmos.DrawRay(transform.position, doorToUnclock.transform.position - transform.position);
         }
+        else
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(transform.position + Vector3.up * 2, 0.5f);
+        }
     }
 }
